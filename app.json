@@ -1,0 +1,47 @@
+{
+    "name": "TAG ALL",
+    "description": "KEPO LU POKE.",
+    "logo": "https://telegra.ph/file/2784ee65894aae04a1115.jpg",
+    "keywords": [
+        "Pyrogram"
+    ],
+    "repository": "https://github.com/mikeel-ye/tagall",
+    "success_url": "https://t.me/Dareenbott",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "Au ya cek my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Au ya cek my.telegram.org",
+            "required": true
+        },
+        "HEROKU_API": {
+            "description": "Isi Coy Jan Dikosongin.",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "BACOT JINK.",
+            "required": true
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Isi Coy Jan Dikosongin",
+            "required": true
+        }
+    },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "basic"
+        }
+    }
+}
